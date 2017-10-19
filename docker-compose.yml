@@ -8,11 +8,10 @@ services:
   web:
     build: .
     env_file:
-      - web-variables.env
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+      - dev.env
     volumes:
       - .:/usr/src/eecshelp
     ports:
-      - "3000:3000"
+      - "9292:9292"
     depends_on:
       - db
