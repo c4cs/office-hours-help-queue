@@ -1,5 +1,5 @@
 # Change these
-server 'oh.eecs.umich.edu', port: 22, roles: [:web, :app, :db], primary: true
+server '192.168.223.197', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:mterwill/office-hours-help-queue.git'
 set :application,     'eecshelp'
