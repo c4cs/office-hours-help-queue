@@ -28,10 +28,10 @@ The easiest way to spin up a development environment is to use
 $ docker-compose up -d
 
 # Create tables and seed a first course and queue
-$ docker-compose run web rake db:migrate db:seed
+$ docker-compose exec web rake db:migrate db:seed
 ```
 
 Now add an entry for `dev.eecs.help` to `127.0.0.1` in your `/etc/hosts` file.
 Google OAuth2 behaves a little weirdly when the callback URI is `localhost`.
 
-The app should now be accessible at http://dev.eecs.help:3000.
+The app should now be accessible at http://dev.eecs.help:9292.
