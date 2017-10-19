@@ -27,9 +27,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 gem 'mysql2'
 
 group :development, :test do
@@ -54,13 +51,5 @@ gem 'omniauth-google-oauth2'
 
 # For action cable
 gem 'redis'
-
-group :development do
-  gem 'capistrano',         require: false
-  gem 'capistrano-rvm',     require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
-end
 
 gem 'react-rails'
